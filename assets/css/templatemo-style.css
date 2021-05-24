@@ -236,7 +236,7 @@ html {
   top: calc(0px);
   width: 20%;
   will-change: transform;
-  /* z-index: 9999 !important; */
+  z-index: 2 !important;
 }
 
 .menu-toggle {
@@ -249,7 +249,7 @@ html {
 }
 
 #menu-toggle {
-  /* z-index: 999; */
+  z-index: 2;
   cursor: pointer;
   position: fixed;
   top: 0;
