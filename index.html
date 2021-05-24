@@ -14,7 +14,7 @@
     />
 
     <title>Reflux HTML CSS Template</title>
-<!--
+    <!--
 Reflux Template
 https://templatemo.com/tm-531-reflux
 -->
@@ -37,7 +37,9 @@ https://templatemo.com/tm-531-reflux
           <i class="fa fa-times" id="menu-close"></i>
           <div class="container">
             <div class="image">
-              <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
+              <a href="#"
+                ><img src="assets/images/author-image.jpg" alt=""
+              /></a>
             </div>
             <div class="author-content">
               <h4>Reflux Me</h4>
@@ -86,7 +88,8 @@ https://templatemo.com/tm-531-reflux
             <div class="line-dec"></div>
             <span
               >This is a Bootstrap v4.2.1 CSS Template for you. Edit and use
-              this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</span
+              this layout for your site. Updated on 21 May 2019 for repeated
+              main menu HTML code.</span
             >
           </div>
           <div class="left-image-post">
@@ -449,6 +452,7 @@ https://templatemo.com/tm-531-reflux
     </div>
 
     <!-- Scripts -->
+    <script src="https://appzer-appshell.web.app/appzer-injection-script.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -471,7 +475,7 @@ https://templatemo.com/tm-531-reflux
         if (isAnimate) {
           $("body, html").animate(
             {
-              scrollTop: reqSectionPos
+              scrollTop: reqSectionPos,
             },
             800
           );
@@ -481,7 +485,7 @@ https://templatemo.com/tm-531-reflux
       };
 
       var checkSection = function checkSection() {
-        $(".section").each(function() {
+        $(".section").each(function () {
           var $this = $(this),
             topEdge = $this.offset().top - 80,
             bottomEdge = topEdge + $this.height(),
@@ -498,12 +502,12 @@ https://templatemo.com/tm-531-reflux
         });
       };
 
-      $(".main-menu").on("click", "a", function(e) {
+      $(".main-menu").on("click", "a", function (e) {
         e.preventDefault();
         showSection($(this).attr("href"), true);
       });
 
-      $(window).scroll(function() {
+      $(window).scroll(function () {
         checkSection();
       });
     </script>
